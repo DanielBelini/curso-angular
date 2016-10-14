@@ -12,7 +12,7 @@ var core_1 = require('@angular/core');
 var CursoComponent = (function () {
     function CursoComponent() {
         this.nomePortal = 'loiane.cursos';
-        this.cursos = ['angular 2', 'java', 'ext js'];
+        this.cursos = ['angular 2', 'java', 'ext js', 'bootstrap'];
     }
     CursoComponent = __decorate([
         core_1.Component({

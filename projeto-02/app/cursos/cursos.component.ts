@@ -16,5 +16,5 @@ import { Component } from '@angular/core';
 export class CursoComponent{
 
     nomePortal = 'loiane.cursos';
-    cursos = ['angular 2', 'java', 'ext js'];
+    cursos = ['angular 2', 'java', 'ext js', 'bootstrap'];
 }
