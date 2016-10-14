@@ -9,6 +9,15 @@ import { Component } from '@angular/core';
             {{curso}}
         </li>
     </ul>
+    
+    <p> atividades para fazer </p>
+    <ul>
+        <li *ngFor="let atv of atividades">
+            {{ atv }}
+        </li>
+    </ul>
+    
+
     `
     
 })
@@ -16,5 +25,6 @@ import { Component } from '@angular/core';
 export class CursoComponent{
 
     nomePortal = 'loiane.cursos';
-    cursos = ['angular 2', 'java', 'ext js', 'bootstrap'];
+    cursos = ['angular 2', 'java', 'ext js', 'bootstrap','ilustrator'];
+    atividades= ['verificar o que é ilustrator', 'fazer um novo layout', 'estudar matematica'];
 }

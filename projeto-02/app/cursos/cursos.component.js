@@ -12,12 +12,13 @@ var core_1 = require('@angular/core');
 var CursoComponent = (function () {
     function CursoComponent() {
         this.nomePortal = 'loiane.cursos';
-        this.cursos = ['angular 2', 'java', 'ext js', 'bootstrap'];
+        this.cursos = ['angular 2', 'java', 'ext js', 'bootstrap', 'ilustrator'];
+        this.atividades = ['verificar o que é ilustrator', 'fazer um novo layout', 'estudar matematica'];
     }
     CursoComponent = __decorate([
         core_1.Component({
             selector: 'curso-lista',
-            template: "\n    <p> cursos {{ nomePortal }}</p>\n    <ul>\n        <li *ngFor=\"let curso of cursos\">\n            {{curso}}\n        </li>\n    </ul>\n    "
+            template: "\n    <p> cursos {{ nomePortal }}</p>\n    <ul>\n        <li *ngFor=\"let curso of cursos\">\n            {{curso}}\n        </li>\n    </ul>\n    \n    <p> atividades para fazer </p>\n    <ul>\n        <li *ngFor=\"let atv of atividades\">\n            {{ atv }}\n        </li>\n    </ul>\n    \n\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], CursoComponent);
