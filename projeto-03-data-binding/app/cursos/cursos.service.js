@@ -13,7 +13,7 @@ var CursosService = (function () {
     function CursosService() {
     }
     CursosService.prototype.getCursos = function () {
-        return ['angular', 'java', 'ext js', 'teste'];
+        return ['Angular 2', 'Java', 'Ext JS', 'Estrutura de Dados'];
     };
     CursosService = __decorate([
         core_1.Injectable(), 

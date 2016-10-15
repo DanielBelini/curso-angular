@@ -9,17 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var tarefasService = (function () {
-    function tarefasService() {
+var common_1 = require('@angular/common');
+var cursos_service_1 = require('./cursos.service');
+var cursos_component_1 = require('./cursos.component');
+var CursosModule = (function () {
+    function CursosModule() {
     }
-    tarefasService.prototype.getTarefas = function () {
-        return ['fazer exercicio', 'estudar trigonometria', 'estudar js'];
-    };
-    tarefasService = __decorate([
-        core_1.Injectable(), 
+    CursosModule = __decorate([
+        core_1.NgModule({
+            imports: [common_1.CommonModule],
+            declarations: [cursos_component_1.CursosComponent],
+            exports: [cursos_component_1.CursosComponent],
+            providers: [cursos_service_1.CursosService]
+        }), 
         __metadata('design:paramtypes', [])
-    ], tarefasService);
-    return tarefasService;
+    ], CursosModule);
+    return CursosModule;
 }());
-exports.tarefasService = tarefasService;
-//# sourceMappingURL=tarefas.service.js.map
+exports.CursosModule = CursosModule;
+//# sourceMappingURL=cursos.module.js.map

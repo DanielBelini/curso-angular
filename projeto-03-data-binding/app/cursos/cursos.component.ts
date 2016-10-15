@@ -1,36 +1,27 @@
 import { Component } from '@angular/core';
 
 import { CursosService } from './cursos.service';
-import { tarefasService } from './tarefas.service';
+
 @Component({
-    selector: 'curso-lista',
-    template: `
-    <p> cursos {{ nomePortal }}</p>
-    <ul>
-        <li *ngFor="let c of cursos">
-           {{c}}
+  moduleId: module.id,
+  selector: 'cursos-lista',
+  /*template: `
+      <h3>Cursos {{ nomePortal }}</h3>
+      <ul>
+        <li *ngFor="let curso of cursos">
+          {{ curso }}
         </li>
-    </ul>
-    <p> tarefas para fazer</p>
-    <ul>
-        <li *ngFor="let t of tarefas">
-           {{t}}
-        </li>
-    </ul>
-    
-    `,
-    providers: [CursosService, tarefasService]
-    
+      </ul>
+  `*/
+  templateUrl: 'cursos.component.html'
 })
+export class CursosComponent {
 
-export class CursoComponent{
+  nomePortal = 'loiane.traning';
 
-    nomePortal = 'loiane.cursos';
-    cursos;
-    tarefas;
+  cursos;
 
-    constructor(cursosService: CursosService, t: tarefasService){
-        this.cursos = cursosService.getCursos();
-        this.tarefas = t.getTarefas();    
-    }
+  constructor(cursosService: CursosService){
+    this.cursos = cursosService.getCursos();
+  }
 }

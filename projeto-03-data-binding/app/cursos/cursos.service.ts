@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 
-@Injectable()   
+@Injectable()
 export class CursosService {
-    
-   getCursos(){
-       return ['angular', 'java', 'ext js', 'teste'];
-   } 
+
+  getCursos(){
+    return ['Angular 2', 'Java',  'Ext JS', 'Estrutura de Dados'];
+  }
 }
